@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+ 
+       <objectContribution
+            adaptable="false"
+            id="ProjectRoot"
+            objectClass="org.eclipse.jdt.core.IJavaProject">
+         <menu
+               id="org.eclipse.emf.validationMenuID"
+               label="ParallelJ">
+            <separator
+                  name="forBIRT">
+            </separator>
+         </menu>
+         <action
+               class="net.atos.birtplugin.version2.popup.actions.NewAction"
+               enablesFor="1"
+               icon="icon/Report Design.png"
+               id="net.atos.birtplugin.version2.newAction"
+               label="Create Birt Report"
+               menubarPath="org.eclipse.emf.validationMenuID/forBIRT">
+         </action>
+         <visibility>
+            <objectState
+                  name="projectNature"
+                  value="org.parallelj.designer.validation.ParallelJNature"/>
+         </visibility>
+      </objectContribution>
+   </extension>
+</plugin>
