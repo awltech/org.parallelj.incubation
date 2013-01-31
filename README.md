@@ -10,7 +10,7 @@ More information can be found on our website: http://www.parallelj.org
 Sources
 -------
 
-Fork on github: https://github.com/XA-Labs/org.parallelj.incubation
+Fork on github: https://github.com/awltech/org.parallelj.incubation
 
 Contact
 -------
